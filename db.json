@@ -1,0 +1,189 @@
+{
+  "trails": [
+    {
+      "id": "1",
+      "Image": "https://picsum.photos/200/300?random=1",
+      "name": " Blue Falls",
+      "startAt": "07:00",
+      "endAt": "09:00",
+      "minimumAge": 5,
+      "maximumAge": 100,
+      "unitPrice": 2990
+    },
+    {
+      "id": "2",
+      "Image": "https://picsum.photos/200/300?random=2",
+      "name": "   Green Valley",
+      "startAt": "10:00",
+      "endAt": "13:00",
+      "minimumAge": 11,
+      "maximumAge": 50,
+      "unitPrice": 5990
+    },
+    {
+      "id": "3",
+      "Image": "https://picsum.photos/200/300?random=3",
+      "name": " Brown Mountain",
+      "startAt": "14:00",
+      "endAt": "19:00",
+      "minimumAge": 18,
+      "maximumAge": 40,
+      "unitPrice": 9990
+    },
+    {
+      "id": "4",
+      "Image": "https://picsum.photos/200/300?random=4",
+      "name": " Valley of Flowers",
+      "startAt": "10:00",
+      "endAt": "17:00",
+      "minimumAge": 12,
+      "maximumAge": 100,
+      "unitPrice": 5990
+    },
+    {
+      "id": "5",
+      "Image": "https://picsum.photos/200/300?random=5",
+      "name": " Kailash Falls",
+      "startAt": "09:00",
+      "endAt": "18:00",
+      "minimumAge": 8,
+      "maximumAge": 90,
+      "unitPrice": 4999
+    },
+    {
+      "id": "6",
+      "Image": "https://picsum.photos/200/300?random=6",
+      "name": " Sar Pass ",
+      "startAt": "09:30",
+      "endAt": "16:30",
+      "minimumAge": 5,
+      "maximumAge": 100,
+      "unitPrice": 1950
+    },
+    {
+      "id": "7",
+      "Image": "https://picsum.photos/200/300?random=7",
+      "name": " Snow Leopard",
+      "startAt": "11:00",
+      "endAt": "16:00",
+      "minimumAge": 12,
+      "maximumAge": 80,
+      "unitPrice": 1999
+    },
+    {
+      "id": "8",
+      "Image": "https://picsum.photos/200/300?random=8",
+      "name": " Chadar",
+      "startAt": "08:00",
+      "endAt": "17:00",
+      "minimumAge": 18,
+      "maximumAge": 65,
+      "unitPrice": 4990
+    },
+    {
+      "id": "9",
+      "Image": "https://picsum.photos/200/300?random=9",
+      "name": " Buran Ghati",
+      "startAt": "07:00",
+      "endAt": "18:00",
+      "minimumAge": 6,
+      "maximumAge": 95,
+      "unitPrice": 2990
+    },
+    {
+      "id": "10",
+      "Image": "https://picsum.photos/200/300?random=10",
+      "name": " Miyar Valley",
+      "startAt": "09:00",
+      "endAt": "16:00",
+      "minimumAge": 8,
+      "maximumAge": 100,
+      "unitPrice": 3990
+    }
+  ],
+  "mybookings": [
+    {
+      "name": "Rajesh",
+      "age": 36,
+      "gender": "m",
+      "date": "2022-07-20",
+      "id": 1
+    },
+    {
+      "name": "Chetan",
+      "age": 25,
+      "gender": "m",
+      "date": "2022-07-24",
+      "id": 3
+    },
+    {
+      "name": "kiran",
+      "age": 31,
+      "gender": "m",
+      "date": "2022-08-27",
+      "id": 5
+    }
+  ],
+  "bookings": [
+    {
+      "name": "Bhim",
+      "age": 56,
+      "gender": "m",
+      "date": "2022-08-26",
+      "id": 1
+    },
+    {
+      "name": "Rama Raju",
+      "age": 50,
+      "gender": "m",
+      "date": "2022-07-28",
+      "id": 2
+    },
+    {
+      "name": "hyder",
+      "age": 68,
+      "gender": "m",
+      "date": "2022-07-20",
+      "id": 3
+    },
+    {
+      "name": "rakesh",
+      "age": 54,
+      "gender": "m",
+      "date": "2022-07-20",
+      "id": 4
+    }
+  ],
+  "favourites": [
+    {
+      "id": "2",
+      "Image": "https://picsum.photos/200/300?random=2",
+      "name": "   Green Valley",
+      "startAt": "10:00",
+      "endAt": "13:00",
+      "minimumAge": 11,
+      "maximumAge": 50,
+      "unitPrice": 5990
+    },
+    {
+      "id": "1",
+      "Image": "https://picsum.photos/200/300?random=1",
+      "name": " Blue Falls",
+      "startAt": "07:00",
+      "endAt": "09:00",
+      "minimumAge": 5,
+      "maximumAge": 100,
+      "unitPrice": 2990
+    },
+    {
+      "id": "9",
+      "Image": "https://picsum.photos/200/300?random=9",
+      "name": " Buran Ghati",
+      "startAt": "07:00",
+      "endAt": "18:00",
+      "minimumAge": 6,
+      "maximumAge": 95,
+      "unitPrice": 2990
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+.Trek {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px #ccc;
+  height: 300px;
+  width: 600px;
+  max-width: 91vw;
+  outline: 2px solid #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.Trek-image {
+  width: 300px;
+  object-fit: cover;
+  position: relative;
+  margin: 1rem;
+  border-radius: 4px;
+  margin-right: 0;
+  overflow: hidden;
+}
+.Trek-image > h2 {
+  position: absolute;
+  padding: 2rem 1rem;
+  color: var(--accent-color);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: linear-gradient(to bottom, transparent, var(--accent-color-bg));
+}
+
+.Trek-details {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Trek-details-link {
+  font-size: smaller;
+  text-decoration: underline;
+  color: inherit;
+}
+.Trek-details > section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
