@@ -56,8 +56,18 @@ const FavouriteTreks = () => {
       // })
     })
       .then(({ data }) => {
-        console.log(data);
-        setFavouriteTreks(data);
+        axios({
+            method: "get",
+            url: `/trails/${data[0]?.trailId}`,
+            headers: {
+                "ngrok-skip-browser-warning": "*",
+            },
+            })
+            .then(({ data }) => {
+                console.log(data);
+                setFavouriteTreks([data]);
+            })
+            .finally(() => setLoading(false));
       })
       .finally(() => setLoading(false));
   }, []);

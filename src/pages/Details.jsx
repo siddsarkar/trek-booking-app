@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import TrekDetails from "../components/TrekDetails";
@@ -6,10 +7,18 @@ const Details = () => {
 
   const [loading, setLoading] = useState(true);
   const [trek, setTrek] = useState({});
-  useEffect(() => {
-    fetch(`/treks/${trekId}`)
-      .then((response) => response.json())
-      .then((data) => setTrek(data))
+  useEffect(() => {     
+    axios({
+      method: "get",
+      url: `/trails/${trekId}`,
+      headers: {
+        "ngrok-skip-browser-warning": "*",
+      },
+    })
+      .then(({ data }) => {
+        console.log(data);
+        setTrek(data);
+      })
       .finally(() => setLoading(false));
   }, [trekId]);
 

@@ -14,7 +14,7 @@ const BookingTreks = () => {
 
     axios({
       method: "get",
-      url: "/bookings",
+      url: "/bookings?customerName=Vamshi",
       headers: {
         "ngrok-skip-browser-warning": "*",
       },

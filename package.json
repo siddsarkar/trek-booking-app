@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "https://3a28-223-228-99-89.in.ngrok.io/trekbooking"
 }

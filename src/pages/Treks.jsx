@@ -65,13 +65,16 @@ const Treks = () => {
     const search = e.target.value;
 
     setLoading(true);
-    fetch(`/treks?q=${search}`)
-      .then((response) => response.json())
-      .then((data) => {
+    axios({
+      method: "get",
+      url: `/trails?q=${search}`,
+      headers: {
+        "ngrok-skip-browser-warning": "*",
+      },
+    })
+      .then(({ data }) => {
+        console.log(data);
         setTreks(data);
-      })
-      .catch((error) => {
-        alert(error);
       })
       .finally(() => setLoading(false));
   };

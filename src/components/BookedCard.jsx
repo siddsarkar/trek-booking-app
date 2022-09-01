@@ -4,22 +4,30 @@ import axios from "axios";
 import "./BookedCard.css";
 
 const BookedCard = ({ booking, onAddToMyBooking, myBookingTreks }) => {
-  const { id, name, date } = booking;
+  const { trailId, name, date } = booking;
 
   const [loading, setLoading] = useState(true);
   const [trek, setTrek] = useState({});
 
   useEffect(() => {
-    fetch(`/trails/${id}`)
-      .then((response) => response.json())
-      .then((data) => setTrek(data))
+    axios({
+      method: "get",
+      url: "/trails/"+trailId,
+      headers: {
+        "ngrok-skip-browser-warning": "*",
+      },
+    })
+      .then(({ data }) => {
+        console.log(data);
+        setTrek(data);
+      })
       .finally(() => setLoading(false));
   }, []);
 
   return (
     <div className="Trek">
       <header className="Trek-image">
-        <img src={trek.Image} alt="trek" />
+        <img src={trek.Image || "https://picsum.photos/200/300"} alt="trek" />
         <h2>{trek.name || "loading"}</h2>
       </header>
       <div className="Trek-details">
@@ -32,7 +40,7 @@ const BookedCard = ({ booking, onAddToMyBooking, myBookingTreks }) => {
               {new Date(date).toDateString()}
             </div>
           </div>
-          <Link className="Trek-details-link" to={`/treks/${id}`}>
+          <Link className="Trek-details-link" to={`/treks/${trailId}`}>
             <strong>...more details</strong>
           </Link>
         </section>

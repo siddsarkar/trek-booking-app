@@ -7,7 +7,7 @@ const TrekDetails = ({ trek }) => {
     <div className="TrekDetails">
       <h1>{name}</h1>
       <div>
-        <img src={Image} alt="trek" />
+        <img src={Image || "https://picsum.photos/200/300"} alt="trek" />
 
         <p style={{ margin: "10px 0" }}>
           <em>
